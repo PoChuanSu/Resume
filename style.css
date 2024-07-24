@@ -1,11 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  margin: 20px 20px;
+}
+
+ul,
+ol {
+  margin-left: 20px;
+}
+
+li:last-child {
+  margin-bottom: 10px;
+}
+
 .name {
   color: rgb(8, 110, 124);
+}
+
+.profile-img {
+  height: 200px;
+  width: 200px;
 }
 
 .title {
   color: rgb(8, 110, 124);
   font-size: 25px;
   text-transform: uppercase;
+  margin: 15px 0;
+}
+
+.work-title {
+  margin-bottom: 10px;
+}
+
+.skill-categories {
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.skill-category {
+  display: grid;
+  grid-template-columns: max-content 1fr; /* Two columns: one for the title and one for the content */
+  gap: 10px; /* Space between the columns */
+  margin-bottom: 1em;
+}
+
+dt {
+  font-weight: bold;
+  margin-right: 1em;
+}
+
+dd {
+  margin: 0;
 }
 
 a:link {
@@ -20,5 +73,16 @@ a:visited {
 
 a:hover {
   font-weight: bold;
+  text-decoration: underline;
+}
+
+.more-info:link,
+.more-info:visited {
+  font-weight: bold;
+  color: black;
+}
+
+.more-info:hover,
+.more-info:active {
   text-decoration: underline;
 }
