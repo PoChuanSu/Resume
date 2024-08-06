@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+/* Reset format */
 
 body {
   font-family: sans-serif;
@@ -9,6 +10,8 @@ body {
 
 .container {
   margin: 20px 20px;
+  padding: 20px 20px;
+  border: solid;
 }
 
 ul,
@@ -22,6 +25,18 @@ li:last-child {
 
 .name {
   color: rgb(8, 110, 124);
+  position: relative;
+}
+
+.name::before {
+  content: "Resume";
+  background-color: #ffe70e;
+  color: #000;
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+  top: -35px;
+  left: -35px;
 }
 
 .profile-img {
@@ -34,6 +49,10 @@ li:last-child {
   font-size: 25px;
   text-transform: uppercase;
   margin: 15px 0;
+}
+
+.summary-content {
+  width: 1000px;
 }
 
 .work-title {
@@ -85,4 +104,12 @@ a:hover {
 .more-info:hover,
 .more-info:active {
   text-decoration: underline;
+}
+
+.horizontal-line {
+  margin-bottom: 10px;
+}
+
+.outcome {
+  margin-bottom: 10px;
 }
