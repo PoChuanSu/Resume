@@ -41,34 +41,22 @@ li:last-child {
   margin-bottom: 10px;
 }
 
-.name {
-  font-size: 3rem;
-  color: black;
-  position: relative;
-  margin-bottom: 4rem;
-}
-
-.contact-info {
-  font-size: 2rem;
-  justify-self: end;
-}
-
 .banner-img {
   border-radius: 20px 20px 0px 0px;
 }
 
 .profile-img {
   /* border-radius: 50%; */
-  height: 60rem;
-  width: 60rem;
+  height: 45rem;
+  width: 45rem;
   border-radius: 50%;
 }
 
 .profile-img-box {
   position: relative; /* Trick for overlapped position*/
   /* border-radius: 50%; */
-  height: 60rem;
-  width: 60rem;
+  height: 45rem;
+  width: 45rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,6 +76,18 @@ li:last-child {
   border-radius: 50%;
   transform: translate(-50%, -50%); /* Move square to the center */
   z-index: -1;
+}
+
+.name,
+.contact-info {
+  margin-left: 3rem;
+  font-size: 8rem;
+  margin-top: 6rem;
+}
+
+.contact-info {
+  font-size: 4rem;
+  justify-self: end;
 }
 
 .title {
