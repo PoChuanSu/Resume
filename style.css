@@ -1,8 +1,12 @@
+/* Reset format */
 * {
   margin: 0;
   padding: 0;
 }
-/* Reset format */
+
+html {
+  font-size: 62.5%;
+}
 
 body {
   font-family: sans-serif;
@@ -12,6 +16,7 @@ body {
   margin: 20px 20px;
   padding: 20px 20px;
   border: solid;
+  /* background-color: aqua; */
 }
 
 ul,
@@ -24,7 +29,7 @@ li:last-child {
 }
 
 .name {
-  color: rgb(8, 110, 124);
+  color: black;
   position: relative;
 }
 
@@ -40,12 +45,26 @@ li:last-child {
 }
 
 .profile-img {
-  height: 200px;
-  width: 200px;
+  border-radius: 50%;
+  height: 10rem;
+}
+
+.profile-img-box {
+  position: relative; /* Trick for overlapped position*/
+}
+
+.profile-img-box::after {
+  position: absolute; /* Trick for overlapped position */
+  border-radius: 50%;
+  content: "";
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: #fae5d3;
+  z-index: -1;
 }
 
 .title {
-  color: rgb(8, 110, 124);
+  color: black;
   font-size: 25px;
   text-transform: uppercase;
   margin: 15px 0;
@@ -81,7 +100,7 @@ dd {
 }
 
 a:link {
-  color: rgb(60, 12, 202);
+  color: black;
   font-style: italic;
   text-decoration: none;
 }
