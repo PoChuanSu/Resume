@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-  width: 200rem;
+  width: 100rem;
   margin: auto;
   border: 0.25rem solid;
   border-radius: 25px;
@@ -42,26 +42,27 @@ li:last-child {
 }
 
 .banner-img {
+  width: 100rem;
   border-radius: 20px 20px 0px 0px;
 }
 
 .profile-img {
   /* border-radius: 50%; */
-  height: 45rem;
-  width: 45rem;
+  height: 20rem;
+  width: 20rem;
   border-radius: 50%;
 }
 
 .profile-img-box {
   position: relative; /* Trick for overlapped position*/
   /* border-radius: 50%; */
-  height: 45rem;
-  width: 45rem;
+  height: 20rem;
+  width: 20rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -30rem;
-  margin-left: 10rem;
+  margin-top: -15rem;
+  margin-left: 5rem;
   z-index: 0;
 }
 
@@ -80,25 +81,30 @@ li:last-child {
 
 .name,
 .contact-info {
-  margin-left: 3rem;
-  font-size: 8rem;
-  margin-top: 6rem;
+  margin: 6rem 1rem 5rem 3rem;
+  font-size: 3rem;
 }
 
 .contact-info {
-  font-size: 4rem;
+  font-size: 2rem;
   justify-self: end;
 }
 
 .title {
+  margin: 0rem 1rem 5rem 3rem;
   color: black;
   font-size: 25px;
   text-transform: uppercase;
-  margin: 15px 0;
+}
+
+.horizontal-line {
+  margin: 1rem 3rem 5rem 3rem;
+  margin-bottom: 2rem;
 }
 
 .summary-content {
-  width: 1000px;
+  /* margin: 0rem, ,.l...,l */
+  width: 100rem;
 }
 
 .work-title {
@@ -150,10 +156,6 @@ a:hover {
 .more-info:hover,
 .more-info:active {
   text-decoration: underline;
-}
-
-.horizontal-line {
-  margin-bottom: 10px;
 }
 
 .outcome {
