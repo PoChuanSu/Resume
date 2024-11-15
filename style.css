@@ -240,3 +240,12 @@ a:hover {
 .outcome {
   margin-bottom: 10px;
 }
+
+.project-content {
+  font-size: 1.5rem;
+  margin: 0rem 3rem;
+}
+
+.project-company {
+  margin-bottom: 1rem;
+}
